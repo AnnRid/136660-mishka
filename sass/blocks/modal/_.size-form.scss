@@ -1,0 +1,8 @@
+.size-form {
+  border-bottom: 1px solid transparent;
+}
+
+.size-form__btn {
+  @include margin(30px, 46px);
+  background-color: $accent;
+}

@@ -1,0 +1,4 @@
+.promo-text {
+  @include padding();
+  @include margin-side();
+}

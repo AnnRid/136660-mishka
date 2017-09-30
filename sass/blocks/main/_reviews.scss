@@ -1,0 +1,28 @@
+.reviews__title {
+  @include font(25px, 1.2);
+  @include padding(30px, 40px);
+}
+
+.reviews__text {
+  @include font(15px, 2);
+  padding-bottom: 40px;
+  color: $primary-color;
+}
+
+.reviews__author-name {
+  @include font(15px, 2);
+}
+
+.reviews__author-tag {
+  @include font(17px, 1.4);
+  color: $primary-color;
+}
+
+.reviews__controls {
+  @include margin(40px, 40px);
+}
+
+.reviews__btn {
+  margin-bottom: 45px;
+}
+

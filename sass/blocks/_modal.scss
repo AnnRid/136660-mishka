@@ -1,0 +1,17 @@
+.modal {
+  height: 336px;
+  border-top: 1px solid #c7c7c7 ;
+}
+
+.modal__title {
+  @include font(17px, 0.9);
+  padding-top: 38px;
+}
+
+.modal__text {
+  @include font(15px, 2);
+  @include padding(30px, 30px);
+  color: $primary-color;
+}
+
+

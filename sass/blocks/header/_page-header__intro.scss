@@ -1,0 +1,11 @@
+.page-header__intro {
+  height: 177px;
+  text-align: center;
+  background-color: $color-bg;
+}
+
+.page-header__intro--large {
+  height: 283px;
+  background: $color-bg url("../img/hero-mobile@1x.jpg") no-repeat center top;
+}
+

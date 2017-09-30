@@ -1,0 +1,11 @@
+.page-footer {
+  background-color: $color-bg;
+}
+
+.page-footer__social,
+.page-footer__copyright {
+  @include margin-side(30px, 30px);
+  height: 80px;
+}
+
+

@@ -1,0 +1,15 @@
+.order-form {
+@include margin-side();
+}
+
+.order-form__title {
+  color: $accent;
+}
+
+.order-form__footer {
+  @include padding(20px, 35px);
+}
+
+.order-form__btn {
+  @include margin(35px, 55px);
+}

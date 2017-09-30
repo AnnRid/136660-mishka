@@ -1,0 +1,24 @@
+.view-work {
+  border: 1px solid $light-border;
+}
+
+.view-work__title {
+  @include padding();
+  text-align: center;
+}
+
+.view-work__player {
+  height: 150px;
+}
+
+.view-work__text {
+  @include padding(35px, 30px);
+}
+
+.view-work__description {
+  padding-left: 28px;
+}
+
+.view-work__btn {
+  margin-bottom: 33px;
+}
