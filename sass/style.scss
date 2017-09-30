@@ -5,7 +5,8 @@
 @import "base/btn";
 @import "base/base-style";
 @import "blocks/header/main-nav";
-@import "blocks/header/page-header__intro";
+@import "blocks/header/page-header";
+@import "blocks/main/page-main";
 @import "blocks/main/categories";
 @import "blocks/main/feature";
 @import "blocks/main/about";
@@ -18,11 +19,5 @@
 @import "blocks/main/pagecatalog/view-work";
 @import "blocks/footer/footer";
 @import "blocks/footer/copyright";
-@import "blocks/modal/modal";
-
-
-
-
-
-
-
+@import "blocks/footer/social";
+@import "blocks/modal/modal-order";

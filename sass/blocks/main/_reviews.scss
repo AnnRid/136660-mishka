@@ -1,16 +1,33 @@
+.reviews {
+  @include margin-side(30px, 30px);
+}
+
+.reviews__wrapper {
+  margin-bottom: 45px;
+}
+
 .reviews__title {
   @include font(25px, 1.2);
   @include padding(30px, 40px);
+  margin: 0;
+  font-family: $font-primary-bold;
+}
+
+.reviews_item {
+  margin: 0;
+  padding: 0;
 }
 
 .reviews__text {
   @include font(15px, 2);
   padding-bottom: 40px;
   color: $primary-color;
+  margin: 0;
 }
 
 .reviews__author-name {
   @include font(15px, 2);
+  font-family: $font-primary-bold;
 }
 
 .reviews__author-tag {
@@ -23,6 +40,5 @@
 }
 
 .reviews__btn {
-  margin-bottom: 45px;
+  font-family: $font-primary-bold;
 }
-

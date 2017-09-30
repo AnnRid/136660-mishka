@@ -3,36 +3,15 @@ height: 100%;
 }
 
 body {
-width: 320px;
-min-height: 100hv;
-}
-
-.feature,
-.about,
-.reviews,
-.contacts,
-.connect-btn {
-  @include margin-side(30px, 30px);
-}
-
-p, h1, h2, .reviews_item {
-  margin: 0;
-  padding: 0;
-}
-
-.page-footer__social ul,
-.main-nav ul,
-.categories ul,
-.page-footer ul,
-.about__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  min-width: 320px;
+  min-height: 100hv;
+  font-family: $font-primary;
+  font-size: $font-size;
+  color: $color-text;
+  line-height: $line-height;
+  background-color: $background-color;
 }
 
 a {
-  color: #000000;
   text-decoration: none;
 }
-
-

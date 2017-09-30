@@ -4,8 +4,9 @@
 }
 
 .modal__title {
-  @include font(17px, 0.9);
+  @include font(17px, 1.2);
   padding-top: 38px;
+  font-family: $font-primary-bold;
 }
 
 .modal__text {
@@ -13,5 +14,3 @@
   @include padding(30px, 30px);
   color: $primary-color;
 }
-
-

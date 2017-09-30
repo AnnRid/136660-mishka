@@ -1,3 +1,9 @@
+@mixin reset-ul($margin: 0, $padding: 0, $list-style: 0) {
+  margin: $margin;
+  padding: $padding;
+  list-style: $list-style;
+}
+
 @mixin margin-side($left: 30px, $right: 30px) {
   margin-left: $left;
   margin-right: $right;

@@ -13,14 +13,23 @@
   height: 195px;
 }
 
+.catalog-item__title-link {
+  color: $color-text;
+}
+
 .catalog-item__title {
   @include padding(30px, 20px);
+  margin: 0;
+  font-family: $font-primary-bold;
 }
 
 .catalog-item__data {
+  margin: 0;
   padding-bottom: 30px;
 }
 
 .catalog-item__price {
   @include padding(30px, 35px);
+  margin: 0;
+  font-family: $font-primary-bold;
 }

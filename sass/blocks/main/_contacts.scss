@@ -1,6 +1,12 @@
+.contacts {
+  @include margin-side(30px, 30px);
+}
+
 .contacts__title {
   @include font(18px, 1.7);
   @include padding(45px, 40px);
+  margin: 0;
+  font-family: $font-primary-bold;
 }
 
 .contacts__wrapper {
@@ -9,9 +15,11 @@
   padding-bottom:45px;
 }
 
+.contacts__link {
+  color: $primary-color;
+}
+
 .contacts__map {
   height: 457px;
   border-bottom: 1px solid transparent;
 }
-
-

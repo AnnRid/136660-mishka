@@ -1,6 +1,8 @@
 .categories__list {
   @include font(19px, 1.3);
+  @include reset-ul;
   width: 100%;
+  font-family: $font-primary-bold;
   background-color: $accent;
 }
 
@@ -13,7 +15,5 @@
 }
 
 .categories__link {
-  color: #ffffff;
+  color: $white;
 }
-
-

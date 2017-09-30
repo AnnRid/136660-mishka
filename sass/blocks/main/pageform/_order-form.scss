@@ -1,15 +1,18 @@
 .order-form {
-@include margin-side();
+  @include margin-side();
+  font-family: $font-primary-bold;
 }
 
 .order-form__title {
   color: $accent;
 }
 
-.order-form__footer {
-  @include padding(20px, 35px);
+.order-form__input,
+.order-form__message,
+.order-form__note {
+  font-family: $font-primary;
 }
 
-.order-form__btn {
-  @include margin(35px, 55px);
+.order-form__footer {
+  @include padding(20px, 35px);
 }
