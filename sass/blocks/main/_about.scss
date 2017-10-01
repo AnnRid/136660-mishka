@@ -1,0 +1,19 @@
+.about {
+  @include margin-side(30px, 30px);
+  font-family: $font-primary-bold;
+}
+
+.about__title {
+  @include font(25px, 1.2);
+  @include padding(35px, 35px);
+  margin: 0;
+}
+
+.about__list {
+  @include reset-ul();
+}
+
+.about__item {
+  @include font(17px, 1.2);
+  @include padding(20px, 35px);
+}

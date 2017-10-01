@@ -1,0 +1,17 @@
+html,body{
+height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100hv;
+  font-family: $font-primary;
+  font-size: $font-size;
+  color: $color-text;
+  line-height: $line-height;
+  background-color: $background-color;
+}
+
+a {
+  text-decoration: none;
+}

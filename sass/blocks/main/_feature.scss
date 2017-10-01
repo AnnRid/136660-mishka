@@ -1,0 +1,45 @@
+.feature {
+  @include margin-side(30px, 30px);
+}
+
+.feature__header {
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary-bold;
+}
+
+.feature__title {
+  @include font(25px, 1.2);
+  @include padding(35px, 15px);
+}
+
+.feature__caption {
+  @include font(17px, 1.2);
+  color: $accent;
+}
+
+.feature__description {
+  @include font(15px, 1.6);
+  margin: 0;
+  padding-top: 35px;
+}
+
+.feature__table {
+  @include margin(40px, 30px);
+}
+
+.feature__filed,
+.feature__value {
+  @include font(15px, 1.3);
+}
+
+.feature__price {
+  @include font(17px, 1.4);
+  @include padding(30px, 35px);
+  margin: 0;
+}
+
+.feature__footer {
+  margin-bottom: 35px;
+  font-family: $font-primary-bold;
+}

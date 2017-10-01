@@ -1,0 +1,8 @@
+.btn {
+  display: block;
+  width: 260px;
+  @include padding(17px, 17px);
+  color: $primary-color;
+  text-align: center;
+  border: 1px solid $primary-color;
+}

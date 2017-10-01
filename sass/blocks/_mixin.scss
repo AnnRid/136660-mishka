@@ -1,0 +1,37 @@
+@mixin margin-side($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin margin($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin padding($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin font($size, $line-height) {
+font-size: $size;
+line-height: $line-height;
+}
+
+@mixin font-set($weight, $size, $line-height) {
+font-weight: $weight;
+font-size: $size;
+line-height: $line-height;
+}
+
+@mixin transition($property, $time, $transition) {
+transition-property: $property;
+transition-duration: $time;
+transition-timing-function: $transition;
+}
+
+@mixin center() {
+display: flex;
+justify-content: center;
+align-items: center;
+}

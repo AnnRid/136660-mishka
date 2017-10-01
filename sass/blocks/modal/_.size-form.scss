@@ -1,0 +1,11 @@
+.size-form {
+  border-bottom: 1px solid transparent;
+}
+
+.size-form__footer {
+  @include padding(30px, 46px);
+}
+
+.size-form__btn {
+  background-color: $accent;
+}

@@ -1,0 +1,19 @@
+.categories__list {
+  @include font(19px, 1.3);
+  @include reset-ul;
+  width: 100%;
+  font-family: $font-primary-bold;
+  background-color: $accent;
+}
+
+.categories__item {
+  height: 103px;
+}
+
+.categories__item--toys {
+  background-color: $dark-accent;
+}
+
+.categories__link {
+  color: $white;
+}
