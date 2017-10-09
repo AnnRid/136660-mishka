@@ -13,7 +13,7 @@
           Открыть меню
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--logo">
             <a class="main-nav__link" href="index.html">
               <img class="main-nav__logo-image" src="http://placehold.it/150x100" alt="Мишка" width="86" height="35">
             </a>
@@ -24,19 +24,25 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link" href="search.html">
               Поиск по сайту
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--basket">
             <a class="main-nav__link" href="basket.html">
               Корзина: пока пуста
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--hidden">
+            <a class="main-nav__link" href="basket.html">
+              Бесплатная доставка по России
             </a>
           </li>
         </ul>
       </nav>
       <div class="page-header__intro page-header__intro--large">
+        <p class="page-header__item">Бесплатная доставка по России</p>
         <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
       </div>
     </header>
@@ -77,7 +83,7 @@
             </table>
           </div>
           <div class="feature__image">
-            <img src="catalog.html" alt="Вязанные корзинки" width="260" height="315">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
           </div>
           <footer class="feature__footer">
             <p class="feature__price">Цена: 990 руб.</p>
@@ -112,7 +118,7 @@
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list slider">
-            <blockquote class="reviews_item">
+            <blockquote class="reviews__item">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии  не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают бльше лайков!</p>
               <cite class="reviews__author">
                 <b class="reviews__author-name">Анастасия Красильникова</b>
@@ -128,22 +134,26 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__wrapper">
-          <div class="contacts__item">
-            <p class="contacts__label">e-mail:</p>
-            <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
-          </div>
-          <div class="contacts__item">
-            <p class="contacts__label">адрес:</p>
-            <p class="contacts__text">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</p>
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__list">
+            <div class="contacts__item">
+              <p class="contacts__label">e-mail:</p>
+              <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__label">адрес:</p>
+              <p class="contacts__text">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</p>
+            </div>
           </div>
         </div>
+        <div class="contacts__map">
+          <!-- <img src="img/map-mobile@1x.jpg" alt="Санкт-Петербург, ул.Большая Конюшенная, дом 19/8, офис 101"> -->
+        </div>
       </section>
-      <div class="contacts__map">
-        <img src="http://via.placeholder.com/350x150" alt="Санкт-Петербург, ул.Большая Конюшенная, дом 19/8, офис 101">
+      <div class="connect">
+        <a class="connect-btn btn" href="connect.html">Напишите нам</a>
       </div>
-      <a class="connect-btn btn" href="connect.html">Напишите нам</a>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social social">
@@ -177,7 +187,7 @@
           <label class="size-form__label-radio" for="large">L</label>
         </div>
         <div class="size-form__footer">
-          <button class="size-form__btn btn" type="submit">Отправить заказ</button>
+          <button class="size-form__btn btn" type="submit">Добавить</button>
         </div>
       </form>
     </section>

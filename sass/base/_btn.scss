@@ -1,8 +1,9 @@
 .btn {
   display: block;
-  width: 260px;
-  @include padding(17px, 17px);
+  margin: 0 auto;
+  width: 86px;
+  padding: 17px;
   color: $primary-color;
   text-align: center;
-  border: 1px solid $primary-color;
+  border: 2px solid $primary-color;
 }

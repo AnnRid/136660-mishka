@@ -1,0 +1,39 @@
+.categories__list {
+  @include reset-ul;
+  @include font(19px, 1.3);
+  width: 100%;
+  font-family: $font-primary-bold;
+  background-color: $accent;
+}
+
+.categories__item {
+    width: 100%;
+}
+
+.categories__item--toys {
+  background-color: $dark-accent;
+}
+
+.categories__link {
+  display: block;
+  padding: 35px 30px;
+  color: $white;
+}
+
+@media (min-width: $tablet) {
+  .categories__list {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .categories__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .categories__list {
+    width: 1050px;
+  }
+}
