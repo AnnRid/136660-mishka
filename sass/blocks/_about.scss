@@ -1,0 +1,72 @@
+.about {
+  padding: 35px 30px;
+  font-family: $font-primary-bold;
+}
+
+.about__title {
+  @include font(25px, 1.2);
+  margin: 0;
+}
+
+.about__list {
+  @include reset-ul();
+  width: 260px;
+}
+
+.about__item {
+  @include font(17px, 1.2);
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+@media (min-width: $tablet) {
+  .about {
+    width: 768px;
+    margin: 0 auto;
+    padding: 60px 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .about__item {
+    padding-right: 40px;
+    width: 334px;
+  }
+
+  .about__item--gift {
+    order: 6;
+  }
+
+  .about__item--like {
+    order: 5;
+  }
+
+  .about__item--rocket {
+    order: 4;
+  }
+
+  .about__item--style {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about {
+    padding: 70px 50px;
+    width: 1150px;
+  }
+
+  .about__title {
+    width: 875px;
+    margin-left: 175px;
+  }
+
+  .about__list {
+    margin-left: 175px;
+    width: 700px;
+  }
+}

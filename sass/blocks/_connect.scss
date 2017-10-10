@@ -1,0 +1,44 @@
+.connect {
+  padding-top: 40px;
+}
+
+.connect-btn {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 100%;
+  font-family: $font-primary-bold;
+}
+
+@media (min-width: $tablet) {
+  .connect {
+    margin: 0 auto;
+    padding-top: 55px;
+    width: 668px;
+  }
+
+  .connect-btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 100%;
+    font-family: $font-primary-bold;
+  }
+
+  .connect-btn {
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .connect {
+    margin: 0 auto;
+    margin-top: -50px;
+    padding-top: 0;
+    padding-left: 175px;
+    padding-right: 525px;
+    width: 1050px;
+  }
+
+  .connect-btn {
+      margin: 0;
+  }
+}

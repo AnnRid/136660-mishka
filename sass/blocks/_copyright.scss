@@ -2,3 +2,7 @@
   @include font(19px, 0.9);
   font-family: $font-primary-bold;
 }
+
+.page-footer__copyright {
+  display: flex;
+}

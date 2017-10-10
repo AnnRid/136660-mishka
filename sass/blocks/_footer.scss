@@ -1,0 +1,27 @@
+.page-footer {
+  margin-top: 58px;
+  background-color: $color-bg;
+}
+
+.page-footer__social,
+.page-footer__copyright {
+  margin: 0 auto;
+  width: 260px;
+  height: 80px;
+}
+
+.social__list {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    margin-top: 63px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer {
+    margin-top: 105px;
+  }
+}

@@ -1,9 +1,16 @@
-html,body{
-height: 100%;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
   min-width: 320px;
+  margin: 0;
+  padding: 0;
   min-height: 100hv;
   font-family: $font-primary;
   font-size: $font-size;
@@ -14,4 +21,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

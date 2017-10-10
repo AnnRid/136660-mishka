@@ -1,0 +1,261 @@
+.order-form {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: $font-primary-bold;
+}
+
+.order-form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.order-form__title {
+  color: $accent;
+}
+
+.order-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+
+.order-form__input,
+.order-form__message,
+.order-form__note {
+  font-family: $font-primary;
+}
+
+.order-form__input {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid $black;
+}
+
+.order-form__label {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 260px;
+}
+
+.order-form__input-radio,
+.order-form__input-check {
+  display: none;
+}
+
+.order-form__label-radio,
+.order-form__label-check {
+  display: block;
+  position: relative;
+}
+
+.order-form__label-check:before,
+.order-form__label-radio:before {
+  display: inline-block;
+  margin-right: 25px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid $primary-color;
+  vertical-align: middle;
+}
+
+.order-form__label-radio:before {
+  border-radius: 50%;
+}
+
+.order-form__input-radio:checked +
+.order-form__label-radio:after {
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: $second-accent;
+}
+
+.order-form__label-check {
+  padding-bottom: 20px;
+}
+
+.order-form__input-check:checked + label:after {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-right: 25px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background: url(../img/icon-tick.svg) no-repeat;
+}
+
+.order-form__message {
+  width: 100%;
+}
+
+.order-form__note {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.order-form__btn {
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 260px;
+  font-family: $font-primary-bold;
+}
+
+@media (min-width: $tablet) {
+  .order-form {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .order-form__fieldset {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .order-form__title {
+    margin: 0;
+    width: 167px;
+  }
+
+  .order-form__label-radio {
+    width: 334px;
+      &[for="accessory"] {
+        margin-bottom: 25px;
+      }
+  }
+
+  .order-form__fieldset {
+    display: flex;
+    margin-bottom: 15px;
+    width: 668px;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 501px;
+    box-sizing: border-box;
+      &--size-phone {
+        width: 668px;
+      }
+  }
+
+  .order-form__input {
+    &[name="tel"],
+    &[name="email"] {
+      width: 501px;
+    }
+  }
+
+  .order-form__label-check {
+    display: flex;
+    align-items: center;
+    width: 230px;
+  }
+
+  .order-form__label[for="name"] {
+    width: 70px;
+  }
+
+  .order-form__label[for="surname"],
+  .order-form__label[for="fullname"] {
+    width: 125px;
+  }
+
+  .order-form__input[name="firstname"] {
+    width: 431px;
+  }
+
+  .order-form__input[name="surname"],
+  .order-form__input[name="fullname"] {
+    width: 376px;
+  }
+
+  .order-form__message {
+    width: 501px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+  }
+
+  .order-form__note {
+    order: 1;
+  }
+
+  .order-form__btn {
+    margin-left: 0;
+    width: 230px;
+    height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .order-form__fieldset {
+    margin: 0 auto;
+    width: 1050px;
+  }
+
+  .order-form__title {
+    width: 175px;
+  }
+
+  .order-form__wrapper {
+    width: 700px;
+      &--size-phone {
+        width: 875px;
+      }
+  }
+
+  .order-form__wrapper--size-color {
+    width: 735px;
+  }
+
+  .order-form__label-radio {
+    width: 525px;
+  }
+
+  .order-form__label-check {
+    width: 230px;
+  }
+
+   .order-form__input[name="firstname"] {
+    width: 630px;
+  }
+
+  .order-form__input[name="surname"],
+  .order-form__input[name="fullname"] {
+    width: 575px;
+  }
+
+  .order-form__input {
+    &[name="tel"],
+    &[name="email"] {
+      width: 700px;
+    }
+  }
+
+  .order-form__message {
+    width: 700px;
+  }
+
+  .order-form__footer {
+    margin: 0 auto;
+    width: 700px;
+  }
+}
