@@ -1,9 +1,23 @@
 .btn {
+  @include font(17px, 1.2);
   display: block;
   margin: 0 auto;
-  width: 86px;
-  padding: 17px;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
   color: $primary-color;
+  font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
   border: 2px solid $primary-color;
+  background-color: $white;
+}
+
+.btn:hover {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }

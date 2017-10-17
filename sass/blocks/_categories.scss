@@ -1,23 +1,41 @@
 .categories__list {
   @include reset-ul;
   @include font(19px, 1.3);
-  width: 100%;
-  font-family: $font-primary-bold;
+  min-width: 320px;
+  font-weight: bold;
+}
+
+.categories__item--interior a {
   background-color: $accent;
+    &:hover,
+    &:active {
+      background-color: #59d5bc;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
 }
 
-.categories__item {
-    width: 100%;
-}
-
-.categories__item--toys {
+.categories__item--toys a {
   background-color: $dark-accent;
+    &:hover,
+    &:active {
+      background-color: #46c1ae;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 .categories__link {
   display: block;
-  padding: 35px 30px;
+  padding: 27.5px 30px;
   color: $white;
+}
+
+.categories__break-word {
+  display: block;
+  width: 26%;
 }
 
 @media (min-width: $tablet) {
@@ -29,6 +47,16 @@
 
   .categories__item {
     width: 50%;
+  }
+
+  .categories__link {
+    display: block;
+    padding: 35px 37px;
+  }
+
+  .categories__break-word {
+    display: block;
+    width: 38%;
   }
 }
 

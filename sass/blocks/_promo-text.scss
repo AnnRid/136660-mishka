@@ -1,21 +1,23 @@
 .promo-text {
-  margin: 0;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include font(13px, 1.8);
+  margin: 0 auto;
+  padding: 24px 30px 0;
+  min-width: 320px;
 }
 
 @media (min-width: $tablet) {
   .promo-text {
-    margin-left: 50px;
-    margin-right: 50px;
+    @include font(17px, 1.8);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 768px;
   }
 }
 
 @media (min-width: $desktop) {
   .promo-text {
-    max-width: 700px;
-    margin: 0 auto;
+    padding-left: 225px;
+    padding-right: 201px;
+    width: 1150px;
   }
 }
