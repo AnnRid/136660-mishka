@@ -8,25 +8,27 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type='button'>
-          Открыть меню
+          <span class="main-nav__toggle-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__link" href="index.html">
-              <img class="main-nav__logo-image" src="http://placehold.it/150x100" alt="Мишка" width="86" height="35">
+          <li class="main-nav__item main-nav__item--logo main-nav__item--active">
+            <a class="main-nav__link main-nav__link--logo" href="index.html">
+              <img class="main-nav__logo-image" src="../img/logo-mobile.svg" alt="Мишка" width="86" height="35">
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--list-goods">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--order-work">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link" href="search.html">
+              <span class="main-nav__item-search-hidden">
               Поиск по сайту
+              </span>
             </a>
           </li>
           <li class="main-nav__item main-nav__item--basket">
@@ -34,9 +36,14 @@
               Корзина: пока пуста
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--hidden">
-            <a class="main-nav__link" href="basket.html">
-              Бесплатная доставка по России
+          <li class="main-nav__item main-nav__item--new main-nav__item--hidden">
+            <a class="main-nav__link" href="novelty.html">
+              Новые поступления
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale main-nav__item--hidden">
+            <a class="main-nav__link" href="sale.html">
+              Распродажа
             </a>
           </li>
         </ul>
@@ -50,10 +57,12 @@
       <div class="categories">
         <ul class="categories__list">
           <li class="categories__item categories__item--interior">
-            <a class="categories__link" href="interior.html">Предметы интерьера</a>
+          <!-- interior.html -->
+            <a class="categories__link" href="#"><span class="categories__break-word">Предметы интерьера</span></a>
           </li>
           <li class="categories__item categories__item--toys">
-            <a class="categories__link" href="toys.html">Детские игрушки</a>
+          <!-- toys.html -->
+            <a class="categories__link" href="#"><span class="categories__break-word">Детские игрушки</span></a>
           </li>
         </ul>
       </div>
@@ -191,5 +200,6 @@
         </div>
       </form>
     </section>
+    <script src="js/menu.js"></script>
   </body>
 </html>

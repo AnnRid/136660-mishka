@@ -1,23 +1,26 @@
 .modal {
-  padding: 35px 30px 45px 30px;
   margin: 0 auto;
-  width: 100%;
+  padding: 35px 30px 45px 30px;
+  min-width: 320px;
   max-width: 570px;
-  border: 1px solid #cccccc;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba($black, 0.25);
 }
 
 .modal__title {
-  @include font(17px, 1.2);
-  margin: 0;
-  padding-bottom: 25px;
+  @include font(25px, 1.2);
+  margin: 0 auto;
+  padding-bottom: 15px;
+  max-width: 350px;
   text-align: center;
-  font-family: $font-primary-bold;
+  font-weight: bold;
 }
 
 .modal__text {
   @include font(15px, 2);
-  margin: 0;
-  padding-bottom: 30px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  max-width: 350px;
   text-align: center;
   color: $primary-color;
 }
@@ -30,6 +33,7 @@
 .size-form__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 31px;
 }
 
 .size-form__input-radio {
@@ -37,32 +41,56 @@
 }
 
 .size-form__label-radio{
+  @include font(17px, 1.2);
   display: inline-block;
   position: relative;
-  border: 2px solid $light-border;
+  padding-top: 14px;
+  padding-bottom: 14px;
   min-width: 80px;
-  height: 50px;
   text-align: center;
+  border: 2px solid rgba($primary-color, 0.1);
 }
 
 .size-form__input-radio:checked + label {
   border-color: $accent;
 }
 
+.size-form__input-radio:hover + label {
+  border-color: $opacity-color;
+}
+
+.size-form__input-radio:active + label {
+  border-color: $second-accent;
+}
+
 .size-form__footer {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 .size-form__btn {
-  margin: 0;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  width: 100%;
-  font-family: $font-primary-bold;
+  color: $white;
+  background-color: $accent;
+  border-color: $accent;
+    &:hover,
+    &:active {
+      background-color: #59d5bc;
+      outline: none;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
 }
 
-
-
 @media (min-width: $tablet) {
+  .modal {
+    padding: 52px 110px 46px;
+  }
 
+  .modal__title {
+    @include font(30px, 1.9);
+  }
+
+  .modal__text {
+    @include font(17px, 1.8);
+  }
 }

@@ -8,25 +8,27 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type='button'>
-          Открыть меню
+          <span class="main-nav__toggle-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__link" href="index.html">
-              <img class="main-nav__logo-image" src="http://placehold.it/150x100" alt="Мишка" width="86" height="35">
+          <li class="main-nav__item main-nav__item--logo main-nav__item--active">
+            <a class="main-nav__link main-nav__link--logo" href="index.html">
+              <img class="main-nav__logo-image" src="../img/logo-mobile.svg" alt="Мишка" width="86" height="35">
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--list-goods">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--order-work">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link" href="search.html">
-              Поиск
+              <span class="main-nav__item-search-hidden">
+              Поиск по сайту
+              </span>
             </a>
           </li>
           <li class="main-nav__item main-nav__item--basket">
@@ -34,13 +36,13 @@
               Корзина: пока пуста
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--hidden">
-            <a class="main-nav__link" href="basket.html">
+          <li class="main-nav__item main-nav__item--new main-nav__item--hidden">
+            <a class="main-nav__link" href="novelty.html">
               Новые поступления
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--hidden">
-            <a class="main-nav__link" href="basket.html">
+          <li class="main-nav__item main-nav__item--sale main-nav__item--hidden">
+            <a class="main-nav__link" href="sale.html">
               Распродажа
             </a>
           </li>
@@ -54,9 +56,9 @@
     <main class="page-main">
       <section class="catalog">
         <article class="catalog-item">
-          <div class="catalog-item__view">
-            <img class="catalog-item__image" src="http://via.placeholder.com/350x150" alt="Зайчик-попрыгайчик" width="260" height="195">
-          </div>
+          <a class="catalog-item__view" href="#">
+            <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+          </a>
           <div class="catalog-item__description">
             <div class="catalog-item__top">
               <a class="catalog-item__title-link" href="goods.html">
@@ -71,9 +73,9 @@
           </div>
         </article>
         <article class="catalog-item">
-          <div class="catalog-item__view">
-            <img class="catalog-item__image" src="http://via.placeholder.com/350x150" alt="Корзинка для белья" width="260" height="195">
-          </div>
+          <a class="catalog-item__view" href="#">
+            <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+          </a>
           <div class="catalog-item__description">
             <div class="catalog-item__top">
               <a class="catalog-item__title-link" href="goods.html">
@@ -88,9 +90,9 @@
           </div>
         </article>
         <article class="catalog-item">
-          <div class="catalog-item__view">
-            <img class="catalog-item__image" src="http://via.placeholder.com/350x150" alt="Большая корзинка для игрушек" width="260" height="195">
-          </div>
+          <a class="catalog-item__view" href="#">
+            <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+          </a>
           <div class="catalog-item__description">
             <div class="catalog-item__top">
               <a class="catalog-item__title-link" href="goods.html">
@@ -110,7 +112,7 @@
           <h2 class="view-work__title">Процесс производства</h2>
         </div>
         <div class="view-work__player">
-          <img class="view-work__video" src="" alt="video">
+          <img class="view-work__video" src="img/video-mobile@1x.jpg" alt="video" width="260" height="150">
           <button class="view-work__player-btn" type="button"></button>
         </div>
         <div class="view-work__description">
@@ -140,5 +142,6 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
