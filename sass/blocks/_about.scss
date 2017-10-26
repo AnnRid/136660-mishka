@@ -1,11 +1,18 @@
 .about {
-  padding: 35px 30px;
-  font-weight: bold;
+  padding: 5px 30px 20px;
 }
 
 .about__title {
   @include font(25px, 1.2);
   margin: 0;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.about__item {
+  @include font(17px, 1.2);
+  padding-top: 15px;
+  font-weight: bold;
 }
 
 .about__list {
@@ -13,17 +20,64 @@
   width: 260px;
 }
 
-.about__item {
-  @include font(17px, 1.2);
-  padding-top: 20px;
-  padding-bottom: 35px;
+.about__list svg {
+  display: inline-block;
+  fill: $accent;
+}
+
+.about__icon-feature-flower {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 32px;
+  height: 38px;
+}
+
+.about__icon-feature-money {
+  width: 47px;
+  height: 28px;
+}
+
+.about__icon-feature-heart {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 33px;
+  height: 28px;
+}
+
+.about__icon-feature-ball {
+  margin-left: 5px;
+  width: 34px;
+  height: 34px;
+}
+
+.about__icon-feature-rocket {
+  margin-left: -5px;
+  width: 54px;
+  height: 23px;
+}
+
+.about__icon-feature-gift {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 33px;
+  height: 34px;
+}
+
+.about__item--style {
+  padding-top: 12px;
+}
+
+.about__item--like {
+  padding-top: 15px;
 }
 
 @media (min-width: $tablet) {
   .about {
     margin: 0 auto;
-    padding: 60px 50px 50px;
+    padding: 35px 50px 60px;
     width: 768px;
+    background-size: auto 17px;
+    background-position: 11px 0;
   }
 
   .about__list {
@@ -39,7 +93,17 @@
   .about__item {
     @include font(20px, 1.1);
     padding-right: 40px;
+    padding-top: 35px;
     width: 50%;
+  }
+
+  .about__item--handmade {
+    padding-right: 50px;
+    padding-top: 45px;
+  }
+
+  .about__item--ecology {
+    padding-top: 30px;
   }
 
   .about__item--gift {
@@ -56,13 +120,16 @@
 
   .about__item--style {
     order: 3;
+    padding-right: 70px;
   }
 }
 
 @media (min-width: $desktop) {
   .about {
-    padding-bottom: 60px;
+    padding-top: 52px;
+    padding-bottom: 68px;
     width: 1150px;
+    background-size: auto 25px;
   }
 
   .about__title {
@@ -74,5 +141,39 @@
   .about__list {
     margin-left: 175px;
     width: 66.66%;
+  }
+
+  .about__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__item--ecology {
+    padding-right: 120px;
+  }
+
+  .about__item--style,
+  .about__item--like {
+    padding-right: 100px;
+  }
+
+  .about__item--style {
+    padding-top: 40px;
+  }
+
+  .about__item--rocket {
+    padding-top: 42px;
+  }
+
+  .about__item--handmade {
+    padding-right: 50px;
+  }
+
+  .about__item--gift {
+    padding-right: 60px;
+  }
+
+  .about__item--like  {
+    padding-right: 110px;
   }
 }

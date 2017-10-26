@@ -1,7 +1,11 @@
+html {
+  -webkit-box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: inherit;
 }
 
 html,
@@ -18,7 +22,6 @@ body {
   font-size: $font-size;
   color: $color-text;
   line-height: $line-height;
-  background-color: $background-color;
 }
 
 a {

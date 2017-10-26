@@ -1,12 +1,14 @@
 .connect {
-  padding: 40px 30px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
   min-width: 320px;
 }
 
 @media (min-width: $tablet) {
   .connect {
-    padding: 55px 50px 57px;
+    padding: 62px 50px 0px;
     width: 768px;
   }
 
@@ -17,7 +19,7 @@
 
 @media (min-width: $desktop) {
   .connect {
-    padding-top: 102px;
+    padding-top: 65px;
     padding-left: 175px;
     padding-right: 525px;
     padding-bottom: 0px;

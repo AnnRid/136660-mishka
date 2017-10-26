@@ -3,6 +3,7 @@
   @include font(19px, 1.3);
   min-width: 320px;
   font-weight: bold;
+  margin-top: -87px;
 }
 
 .categories__item--interior a {
@@ -20,7 +21,7 @@
   background-color: $dark-accent;
     &:hover,
     &:active {
-      background-color: #46c1ae;
+      background-color: $third-accent;
     }
     &:active {
       color: rgba(255, 255, 255, 0.3);
@@ -29,8 +30,28 @@
 
 .categories__link {
   display: block;
-  padding: 27.5px 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  padding-top: 25px;
+  padding-bottom: 15px;
   color: $white;
+}
+
+.categories__link:hover svg {
+  fill: rgba(20, 144, 148, 0.7);
+}
+
+.categories__link:active svg {
+  fill: rgba(20, 144, 148, 0.3);
+}
+
+.categories__icon-interior,
+.categories__icon-toy {
+  width: 60px;
+  height: 63px;
+  fill: rgba(20, 144, 148, 0.5);
+  display: inline-block;
 }
 
 .categories__break-word {
@@ -40,9 +61,14 @@
 
 @media (min-width: $tablet) {
   .categories__list {
+    @include font(20px, 1.5);
     display: flex;
-    width: 668px;
-    margin: 0 auto;
+    margin: -117px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 768px;
+    z-index: 2;
+    position: relative;
   }
 
   .categories__item {
@@ -50,8 +76,8 @@
   }
 
   .categories__link {
-    display: block;
-    padding: 35px 37px;
+    padding: 27px 30px 27px 36px;
+
   }
 
   .categories__break-word {
@@ -62,6 +88,6 @@
 
 @media (min-width: $desktop) {
   .categories__list {
-    width: 1050px;
+    width: 1150px;
   }
 }

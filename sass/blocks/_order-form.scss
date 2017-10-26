@@ -9,12 +9,45 @@
 
 .order-form__title {
   @include font(17px, 1.4);
+  position: relative;
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 23px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   color: $accent;
   text-transform: uppercase;
+  overflow: hidden;
   font-weight: bold;
+}
+
+.order-form__title-type {
+  padding-top: 25px;
+}
+
+.order-form__title-color {
+  padding-bottom: 12px;
+  padding-top: 27px;
+}
+
+.order-form__title-phone {
+  padding-top: 32px;
+  padding-bottom: 0;
+}
+
+.order-form__title:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  height: 1px;
+  vertical-align: middle;
+  background-color: $accent;
+  width: 100%;
+  margin-right: -100%;
+  right: -25px;
+}
+
+.order-form__title-surname {
+  padding-top: 22px;
+  padding-bottom: 5px;
 }
 
 .order-form__wrapper {
@@ -25,10 +58,13 @@
 
 .order-form__label {
   @include font(17px, 1.1);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: inline-block;
   width: 260px;
   font-weight: bold;
+}
+
+.order-form__label:not(first-child) {
+  padding-top: 21px;
 }
 
 .order-form__input-radio,
@@ -44,9 +80,13 @@
   font-weight: bold;
 }
 
-.order-form__label-radio,
+.order-form__label-radio:before {
+  display: block;
+}
+
 .order-form__label-check {
-  margin-bottom: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .order-form__label-check:before,
@@ -103,9 +143,13 @@
 .order-form__input {
   @include font(17px, 1.1);
   padding-top: 20px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   border: none;
   border-bottom: 2px solid $black;
+}
+
+.order-form__input-email {
+  padding-top: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -138,10 +182,6 @@
   outline: none;
 }
 
-.order-form__input[name="tel"] {
-  text-transform: uppercase;
-}
-
 .order-form__message {
   @include font(17px, 1.1);
   width: 100%;
@@ -151,18 +191,60 @@
 }
 
 .order-form__footer {
-  min-width: 320px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+  min-width: 320px;
 }
 
 .order-form__note {
   @include font(14px, 1.1);
   display: inline-block;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 30px;
+}
+
+.order-form__wrapper--size-phone {
+  position: relative;
+}
+
+.order-form__icon-phone {
+  width: 25px;
+  height: 25px;
+  fill: rgba($black, 0.2);
+}
+
+.order-form__icon-mail {
+  width: 32px;
+  height: 32px;
+  fill: rgba($black, 0.2);
+}
+
+.order-form__icon-phone-wrapper {
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+  right: 5px;
+}
+
+.order-form__icon-mail-wrapper {
+  display: inline-block;
+  position: absolute;
+  top: 170px;
+  right: 5px;
+}
+
+.order-form__input[name="tel"] {
+  text-transform: uppercase;
+    &:hover .order-form__icon-phone,
+    &:hover .order-form__icon-mail {
+      fill: $second-accent;
+    }
+    &:active .order-form__icon-phone,
+    &:active .order-form__icon-mail {
+      fill: $second-accent;
+    }
 }
 
 @media (min-width: $tablet) {
@@ -174,8 +256,12 @@
 
   .order-form__fieldset {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 42px;
+    padding-top: 56px;
+    padding-bottom: 33px;
+  }
+
+  .order-form__fieldset-color {
+    padding-top: 40px;
   }
 
   .order-form__group:nth-of-type(2n){
@@ -192,30 +278,42 @@
   .order-form__title {
     padding-top: 15px;
     width: 167px;
+      &:after {
+        display: none;
+      }
+  }
+
+  .order-form__title-color {
+    padding-top: 25px;
   }
 
   .order-form__label-radio,
   .order-form__label-check {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
-  .order-form__label-check:before, .order-form__label-radio:before {
-    width: 50px;
-    height: 50px;
+  .order-form__label-radio:before {
+    width: 52px;
+    height: 52px;
+  }
+
+  .order-form__label-check:before {
+    width: 54px;
+    height: 51px;
   }
 
   .order-form__input-radio:checked +
   .order-form__label-radio:after {
-    top: 15px;
-    left: 15px;
+    top: 16px;
+    left: 16px;
     width: 20px;
     height: 20px;
   }
 
   .order-form__input-check:checked + label:after {
-    top: 11px;
+    top: 15px;
     left: 18px;
-    width: 14px;
+    width: 17px;
     height: 22px;
   }
 
@@ -231,6 +329,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
     width: 501px;
     box-sizing: border-box;
       &--size-phone {
@@ -246,13 +345,23 @@
     }
   }
 
+  .order-form__input[name="firstname"] {
+    padding-top: 15px;
+  }
+
+  .order-form__input[name="surname"],
+  .order-form__input[name="fullname"] {
+    padding-top: 40px;
+  }
+
   .order-form__label-check {
     display: flex;
     align-items: center;
-    width: 230px;
+    width: 48%
   }
 
   .order-form__label[for="name"] {
+    padding-top: 15px;
     width: 70px;
   }
 
@@ -261,18 +370,56 @@
     width: 125px;
   }
 
+  .order-form__label:not(first-child) {
+    padding-top: 40px;
+  }
+
   .order-form__wrapper--size-surname {
     width: 75%;
   }
 
   .order-form__wrapper--size-surname input {
     flex-grow: 1;
+    padding-top: 35px;
     width: 376px;
+  }
+
+  .order-form__fieldset-surname {
+    padding-bottom: 50px;
+  }
+
+  .order-form__fieldset-phone {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .order-form__input[name="email"] {
+    padding-top: 40px;
+  }
+
+  .order-form__title-email {
+      padding-top: 35px;
+  }
+
+  .order-form__icon-phone-wrapper {
+    top: 15px;
+    right: 30px;
+  }
+
+  .order-form__icon-mail-wrapper {
+    top: 90px;
+    right: 25px;
   }
 
   .order-form__message {
     @include font(19px, 1.2);
+    padding: 0;
     width: 501px;
+  }
+
+  .order-form__fieldset-message {
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   .order-form__footer {
@@ -304,6 +451,7 @@
 
   .order-form__title {
     width: 175px;
+    text-align: center;
   }
 
   .order-form__wrapper {
@@ -341,8 +489,22 @@
     }
   }
 
+  .order-form__icon-phone-wrapper {
+    top: 15px;
+    right: 5px;
+  }
+
+  .order-form__icon-mail-wrapper {
+    top: 90px;
+    right: 5px;
+  }
+
   .order-form__message {
     width: 700px;
+  }
+
+  .order-form__fieldset-message {
+    padding-bottom: 36px;
   }
 
   .order-form__footer {
